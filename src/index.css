@@ -370,22 +370,6 @@ html {
     display: none;
   }
 
-  @media only screen and (min-height: 800px) and (min-width: 600px) {
-    html {
-      font-size: 77.5%;
-    }
-  }
-  @media only screen and (min-height: 870px) and (min-width: 600px) {
-    html {
-      font-size: 82.5%;
-    }
-  }
-  @media only screen and (min-height: 950px) and (min-width: 600px) {
-    html {
-      font-size: 87.52%;
-    }
-  }
-
 
 .material-symbols-outlined {
   font-variation-settings:
