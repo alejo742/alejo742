@@ -1,0 +1,19 @@
+:root {
+  --white: #fff;
+  --white-bone: #f0f0f0;
+  --dark-grey: #323C46;
+  --grey: #484848;
+  --light-grey: #676E78;
+  --light-teal: #BDF0EB;
+  --dark-teal: #A7C4CA;
+  --beige: #E8AF7A;
+}
+
+/*styling for a colored round dot*/
+.banner-dot {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 2rem;
+    height: auto;
+    background-color: var(--beige);
+}
