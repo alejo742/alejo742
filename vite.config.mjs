@@ -7,5 +7,10 @@ export default defineConfig(() => {
       outDir: 'build',
     },
     plugins: [react()],
+    server: {
+      watch: {
+        usePolling: true
+      }
+    }
   };
 });
