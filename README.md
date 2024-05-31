@@ -9,7 +9,7 @@
 
 - 👨‍💻 Check out my website! [https://alejo742.github.io](https://alejo742.github.io)
 
-- 📫 Reach me at alejandro.s.manrique.28@dartmouth.edu
+- 📫 Reach me at alejandromanriquenunez@gmail.com
 
 
 <h3 align="left">Connect with me:</h3>
