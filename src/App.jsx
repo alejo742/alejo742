@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react';
-import Navbar from './components/Navbar.jsx';
+import Landing from './pages/Landing.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <Landing/>
     </div>
   );
 }
