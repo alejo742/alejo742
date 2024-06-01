@@ -9,4 +9,4 @@ function Landing() {
   );
 }
 
-export default App;
+export default Landing;
