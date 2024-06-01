@@ -7,14 +7,6 @@ export default defineConfig(() => {
       outDir: 'build',
     },
     plugins: [react()],
-    resolve: {
-      alias: {
-        src: "/src",
-        assets: "/src/assets",
-        components: "/src/components",
-        pages: "/src/pages",
-      },
-    },
     server: {
       watch: {
         usePolling: true
