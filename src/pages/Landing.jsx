@@ -2,6 +2,11 @@ import './Landing.css'
 import React from 'react';
 import Navbar from '../components/Navbar.jsx';
 
+//*hero section image imports
+import linkedinIcon from '../assets/socials/linkedin-dark.svg'
+import githubIcon from '../assets/socials/github-dark.svg'
+import workspaceImage from '../assets/images/alejandro-workspace-img.jpeg'
+
 function Landing() {
   return (
     <div className="landing-wrapper">
@@ -22,16 +27,16 @@ function Landing() {
               </a>
               <div className="hero-socials">
                 <a href="https://www.linkedin.com/in/alejandro-manrique-nunez/">
-                  <img src="/assets/socials/linkedin-dark.svg" alt="LinkedIn" />
+                  <img src={linkedinIcon} alt="LinkedIn" />
                 </a>
                 <a href="https://github.com/alejo742">
-                  <img src="/assets/socials/github-dark.svg" alt="GitHub" />
+                  <img src={githubIcon} alt="GitHub" />
                 </a>
               </div>
             </div>
           </div>
           <div className="right">
-            <img src="/assets/images/alejandro-workspace-img.jpeg" alt="" />
+            <img src={workspaceImage} alt="" />
           </div>
         </section>
       </main>
