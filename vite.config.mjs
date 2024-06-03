@@ -12,6 +12,6 @@ export default defineConfig(({command}) => {
         usePolling: true
       }
     },
-    base: command === 'build' ? '/home/' : '/'
+    base: command === 'build' ? '/alejo742/' : '/'
   };
 });
