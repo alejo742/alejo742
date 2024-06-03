@@ -110,8 +110,9 @@
 }
 
 .main-navbar-mobile {
+    height: calc(100svh - var(--navbar-height));
     position: absolute;
-    top: 60px;
+    top: var(--navbar-height);
     left: 0;
     z-index: 2;
     background-color: var(--white);
