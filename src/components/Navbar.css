@@ -111,6 +111,7 @@
 }
 
 .main-navbar-mobile {
+    height: calc(100svh - 70px);
     position: absolute;
     top: 70px;
     left: 0;
