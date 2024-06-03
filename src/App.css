@@ -7,6 +7,7 @@
   --light-teal: #BDF0EB;
   --dark-teal: #A7C4CA;
   --beige: #E8AF7A;
+  --navbar-height: 7rem;
 }
 
 /*styling for a colored round dot*/
@@ -16,4 +17,38 @@
     width: 2rem;
     height: auto;
     background-color: var(--beige);
+}
+
+/*=== variable root rem sizes for wide screens ===*/
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 75% !important;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  html {
+    font-size: 82.5% !important;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  html {
+    font-size: 90% !important;
+  }
+}
+
+/*=== variable root rem sizes for short screens ===*/
+@media only screen and (max-height: 550px) {
+  html {
+    font-size: 55% !important;
+  }
+}
+@media only screen and (max-height: 450px) {
+  html {
+    font-size: 45% !important;
+  }
+}
+@media only screen and (max-height: 350px) {
+  html {
+    font-size: 35% !important;
+  }
 }
