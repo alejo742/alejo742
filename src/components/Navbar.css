@@ -14,7 +14,6 @@
     width: 100%;
 }
 .main-navbar-wrapper {
-    height: 70px;
     background-color: var(--white);
     position: relative;
     width: 100%;
@@ -111,9 +110,9 @@
 }
 
 .main-navbar-mobile {
-    height: calc(100svh - 70px);
+    height: calc(100svh - var(--navbar-height));
     position: absolute;
-    top: 70px;
+    top: var(--navbar-height);
     left: 0;
     z-index: 2;
     background-color: var(--white);

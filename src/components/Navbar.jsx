@@ -21,6 +21,10 @@ function Navbar() {
         navbarWrapper.classList.remove('shadow')
       }
     })
+
+    //get the height and save it in a custom property
+    let offsetNavHeight = navbarWrapper.offsetHeight
+    root.style.setProperty('--navbar-height', `${offsetNavHeight/10}rem`);
   });
 
   return (
