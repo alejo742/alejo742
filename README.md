@@ -7,7 +7,7 @@
 
 - 🌱 Currently learning **MongoDB, AWS and React Native**
 
-- 👨‍💻 Check out my website! [https://alejo742.github.io](https://alejo742.github.io)
+- 👨‍💻 Check out my website! [https://alejo742.github.io](https://alejo742.github.io/alejo742/)
 
 - 📫 Reach me at alejandromanriquenunez@gmail.com
 
