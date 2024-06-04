@@ -76,7 +76,7 @@ function Landing() {
             </div>
             <div className="about-card about-more-card">
             <div className="about-more-content">
-                <h4>Need<br></br><strong>more?</strong></h4>
+                <h4>Need <strong>more?</strong></h4>
                 <p>Check out my latest work. Sometimes self-crafted or made collaborativelly, always with love and purpose.</p>
               </div>
               <a href="" className="about-main-button about-more-button">
