@@ -7,6 +7,9 @@ import linkedinIcon from '../assets/socials/linkedin-dark.svg'
 import githubIcon from '../assets/socials/github-dark.svg'
 import workspaceImage from '../assets/images/alejandro-workspace-img.jpeg'
 
+//* about section image import
+import laptopMural from '../assets/backgrounds/mural-dev.png'
+
 function Landing() {
   return (
     <div className="landing-wrapper">
@@ -37,6 +40,52 @@ function Landing() {
           </div>
           <div className="right">
             <img src={workspaceImage} alt="" />
+          </div>
+        </section>
+
+        <section className="about-section">
+          <div className="top">
+            <div className="about-card about-intro-card">
+              <div className="about-intro-content">
+                <h4>I'm <strong>Alejandro Manrique</strong>, a <strong>full-stack developer</strong> and <strong>college student</strong>.</h4>
+                <p>As an aspiring software engineer, my journey as a developer has been shaped by a profound human-centered vision. The main purpose of my path is to follow and impact-driven career as a developer.</p>
+              </div>
+              <a href="" className="about-main-button about-contact-button">
+                <span className="material-symbols-outlined">
+                  connect_without_contact
+                </span>
+                Contact me
+              </a>
+            </div>
+            <div className="about-card about-data-card"></div>
+          </div>
+
+          <div className="bottom">
+            <div className="left">
+              <div className="about-image-card">
+                <img src={laptopMural} alt="" />
+              </div>
+              <div className="about-split-card">
+                <div className="about-card about-data-card">
+                  <h4><strong>50+</strong> clients</h4>
+                </div>
+                <div className="about-card about-data-card">
+                  <h4><strong>3+</strong> years exp.</h4>
+                </div>
+              </div>
+            </div>
+            <div className="about-card about-more-card">
+            <div className="about-more-content">
+                <h4>Need <strong>more?</strong></h4>
+                <p>Check out my latest work. Sometimes self-crafted or made collaborativelly, always with love and purpose.</p>
+              </div>
+              <a href="" className="about-main-button about-more-button">
+                See more
+                <span className="material-symbols-outlined">
+                  data_loss_prevention
+                </span>
+              </a>
+            </div>
           </div>
         </section>
       </main>

@@ -10,6 +10,7 @@
 }
 .main-navbar {
     position: fixed;
+    z-index: 9999;
     background-color: var(--white);
     width: 100%;
 }
