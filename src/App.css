@@ -18,6 +18,17 @@
     height: auto;
     background-color: var(--beige);
 }
+.main-section-title {
+  color: var(--white);
+  font-size: 5rem;
+  font-weight: 700;
+}
+.main-section-title strong {
+  color: var(--beige);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.3ch;
+}
 
 /*=== variable root rem sizes for wide screens ===*/
 @media only screen and (min-width: 1400px) {
