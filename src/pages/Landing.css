@@ -344,3 +344,100 @@ main {
         text-align: left;
     }
 }
+
+
+/*=== skills section ===*/
+.skills-section {
+    background-color: var(--dark-grey);
+    width: 100%;
+    padding: 5rem 5vw 6rem 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+.skills-slider-container {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+@-webkit-keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.skills-slider-wrapper {
+    background-color: var(--dark-grey);
+    padding: 3rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #323C46 20%, #323C46 80%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #323C46 20%, #323C46 80%, transparent);
+}
+.skills-slider-wrapper:hover .skills-slider {
+    animation-play-state: paused;
+}
+.skills-slider {
+    display: inline-block;
+    list-style: none;
+    -webkit-animation: slide 8s linear infinite;
+            animation: slide 8s linear infinite;
+}
+.skills-slider-wrapper:nth-child(2) {
+    display: none;
+}
+.skills-slider-wrapper:nth-child(2) .skills-slider {
+    -webkit-animation: slide 8s linear infinite reverse;
+            animation: slide 8s linear infinite reverse;
+}
+.skills-slider img {
+    margin: 0 7rem;
+    height: 9rem;
+    transition: all 0.3s;
+}
+.skills-slider img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.skills-resume-button {
+    width: fit-content;
+    background-color: var(--light-teal);
+    color: var(--dark-grey);
+    padding: 1rem 3rem;
+    border-radius: 1000rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.skills-resume-button:hover {
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 880px) {
+    .skills-resume-button {
+        display: flex;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .skills-slider-wrapper:nth-child(2) {
+        display: block;
+    }
+}

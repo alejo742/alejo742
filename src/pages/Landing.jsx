@@ -11,6 +11,7 @@ import workspaceImage from '../assets/images/alejandro-workspace-img.jpeg'
 import laptopMural from '../assets/backgrounds/mural-dev.png'
 
 function Landing() {
+
   return (
     <div className="landing-wrapper">
       <Navbar/>
@@ -29,10 +30,10 @@ function Landing() {
                 About me 
               </a>
               <div className="hero-socials">
-                <a href="https://www.linkedin.com/in/alejandro-manrique-nunez/">
+                <a target="_blank" href="https://www.linkedin.com/in/alejandro-manrique-nunez/">
                   <img src={linkedinIcon} alt="LinkedIn" />
                 </a>
-                <a href="https://github.com/alejo742">
+                <a target="_blank" href="https://github.com/alejo742">
                   <img src={githubIcon} alt="GitHub" />
                 </a>
               </div>
@@ -87,6 +88,186 @@ function Landing() {
               </a>
             </div>
           </div>
+        </section>
+
+        <section className="skills-section" id="skills-section">
+          <h3 className="main-section-title">I'm good at <strong>these...</strong></h3>
+          <div className='skills-slider-container'>
+            <div className="skills-slider-wrapper">
+              <ul className="skills-slider">
+                <a target="_blank" href="https://www.w3.org/html/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.w3schools.com/css/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                </a>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                </a>
+                <a target="_blank" href="https://reactjs.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                </a>
+                <a target="_blank" href="https://nodejs.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.figma.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                </a>
+                <a target="_blank" href="https://git-scm.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.ruby-lang.org/en/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-plain.svg" />
+                </a>
+                <a target="_blank" href="https://rubyonrails.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" />
+                </a>
+                <a target="_blank" href="https://www.postgresql.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                </a>
+                <a target="_blank" href="https://kotlinlang.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" />
+                </a>
+                <a target="_blank" href="https://developer.android.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.linux.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                </a>
+              </ul>
+              <ul className="skills-slider">
+                <a target="_blank" href="https://www.w3.org/html/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.w3schools.com/css/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                </a>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                </a>
+                <a target="_blank" href="https://reactjs.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                </a>
+                <a target="_blank" href="https://nodejs.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.figma.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                </a>
+                <a target="_blank" href="https://git-scm.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.ruby-lang.org/en/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-plain.svg" />
+                </a>
+                <a target="_blank" href="https://rubyonrails.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" />
+                </a>
+                <a target="_blank" href="https://www.postgresql.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                </a>
+                <a target="_blank" href="https://kotlinlang.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" />
+                </a>
+                <a target="_blank" href="https://developer.android.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.linux.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                </a>
+              </ul>
+            </div>
+            <div className="skills-slider-wrapper">
+              <ul className="skills-slider">
+                <a target="_blank" href="https://www.w3.org/html/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.w3schools.com/css/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                </a>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                </a>
+                <a target="_blank" href="https://reactjs.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                </a>
+                <a target="_blank" href="https://nodejs.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.figma.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                </a>
+                <a target="_blank" href="https://git-scm.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.ruby-lang.org/en/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-plain.svg" />
+                </a>
+                <a target="_blank" href="https://rubyonrails.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" />
+                </a>
+                <a target="_blank" href="https://www.postgresql.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                </a>
+                <a target="_blank" href="https://kotlinlang.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" />
+                </a>
+                <a target="_blank" href="https://developer.android.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.linux.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                </a>
+              </ul>
+              <ul className="skills-slider">
+                <a target="_blank" href="https://www.w3.org/html/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.w3schools.com/css/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                </a>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                </a>
+                <a target="_blank" href="https://reactjs.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                </a>
+                <a target="_blank" href="https://nodejs.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.figma.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                </a>
+                <a target="_blank" href="https://git-scm.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.ruby-lang.org/en/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-plain.svg" />
+                </a>
+                <a target="_blank" href="https://rubyonrails.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" />
+                </a>
+                <a target="_blank" href="https://www.postgresql.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                </a>
+                <a target="_blank" href="https://kotlinlang.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" />
+                </a>
+                <a target="_blank" href="https://developer.android.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.linux.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                </a>
+              </ul>
+            </div>
+          </div>
+          <a href="" className='skills-resume-button'>
+            <span className='material-symbols-outlined'>
+              demography
+            </span>
+            Check my resumé
+          </a>
         </section>
       </main>
     </div>
