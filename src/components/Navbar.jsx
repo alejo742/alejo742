@@ -25,7 +25,7 @@ function Navbar() {
     //get the height and save it in a custom property
     let offsetNavHeight = navbarWrapper.offsetHeight
     root.style.setProperty('--navbar-height', `${offsetNavHeight/10}rem`);
-  });
+  }, []);
 
   return (
     <div className="main-navbar">
