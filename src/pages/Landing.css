@@ -355,6 +355,9 @@ main {
     flex-direction: column;
     gap: 7rem;
 }
+.skills-section .main-section-title {
+    color: var(--white);
+}
 .skills-slider-container {
     margin: 3rem 0;
     display: flex;
@@ -385,21 +388,18 @@ main {
     -webkit-mask-image: linear-gradient(90deg, transparent, #323C46 20%, #323C46 80%, transparent);
           mask-image: linear-gradient(90deg, transparent, #323C46 20%, #323C46 80%, transparent);
 }
-.skills-slider-wrapper:hover .skills-slider {
-    animation-play-state: paused;
-}
 .skills-slider {
     display: inline-block;
     list-style: none;
-    -webkit-animation: slide 8s linear infinite;
-            animation: slide 8s linear infinite;
+    -webkit-animation: slide 12s linear infinite;
+            animation: slide 12s linear infinite;
 }
 .skills-slider-wrapper:nth-child(2) {
     display: none;
 }
 .skills-slider-wrapper:nth-child(2) .skills-slider {
-    -webkit-animation: slide 8s linear infinite reverse;
-            animation: slide 8s linear infinite reverse;
+    -webkit-animation: slide 12s linear infinite reverse;
+            animation: slide 12s linear infinite reverse;
 }
 .skills-slider img {
     margin: 0 7rem;
