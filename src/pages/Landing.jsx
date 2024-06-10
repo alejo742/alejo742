@@ -1,16 +1,50 @@
 import './Landing.css'
-import React from 'react';
+import {React, useEffect} from 'react';
 import Navbar from '../components/Navbar.jsx';
 
 //*hero section image imports
-import linkedinIcon from '../assets/socials/linkedin-dark.svg'
-import githubIcon from '../assets/socials/github-dark.svg'
-import workspaceImage from '../assets/images/alejandro-workspace-img.jpeg'
+import linkedinIcon from '../assets/socials/linkedin-dark.svg';
+import githubIcon from '../assets/socials/github-dark.svg';
+import workspaceImage from '../assets/images/alejandro-workspace-img.jpeg';
 
 //* about section image import
-import laptopMural from '../assets/backgrounds/mural-dev.png'
+import laptopMural from '../assets/backgrounds/mural-dev.png';
+
+//* work section image imports
+import rectangleBackground from '../assets/backgrounds/grey-rectangle-bg.svg';
 
 function Landing() {
+  useEffect(() => {
+    const workDisplayCards = document.querySelectorAll('.work-card');
+    let cardColumnCounter = 1
+    workDisplayCards.forEach((card) => {
+      if(window.innerWidth > 1100)  {
+        if(cardColumnCounter == 1) {
+          card.style.marginTop = "0rem"
+          cardColumnCounter = 2
+        }
+        else if(cardColumnCounter == 2) {
+          card.style.marginTop = "8rem"
+          cardColumnCounter = 3
+        }
+        else if(cardColumnCounter == 3) {
+          card.style.marginTop = "16rem"
+          cardColumnCounter = 1
+        }
+      }
+
+      else if(window.innerWidth > 700) {
+        if(cardColumnCounter == 1) {
+          card.style.marginTop = "0rem"
+          cardColumnCounter = 2
+        }
+        else if(cardColumnCounter == 2) {
+          card.style.marginTop = "8rem"
+          cardColumnCounter = 1
+        }
+      }
+    });
+  }, []);
 
   return (
     <div className="landing-wrapper">
@@ -44,7 +78,7 @@ function Landing() {
           </div>
         </section>
 
-        <section className="about-section">
+        <section className="about-section" id='about-section'>
           <div className="top">
             <div className="about-card about-intro-card">
               <div className="about-intro-content">
@@ -268,6 +302,65 @@ function Landing() {
             </span>
             Check my resumé
           </a>
+        </section>
+
+        <section className="work-section" id="work-section">
+          <img src={rectangleBackground} className="work-section-background"/>
+          <div className="work-section-wrapper">
+            <h3 className="main-section-title">See what <strong>I do.</strong></h3>
+            <div className="work-cards-wrapper">
+              <div className="work-card">
+                <div className="work-image">
+                  <img src="" alt="" />
+                  <a href="https://binat-businesswear.com">
+                    <span className='material-symbols-outlined'>
+                      captive_portal
+                    </span>
+                  </a>
+                </div>
+                <div className="work-content">
+                  <h5><strong>E-Commerce Web |</strong> Team Project</h5>
+                  <h4>Binat</h4>
+                </div>
+
+                <span className="work-number">1</span>
+              </div>
+
+              <div className="work-card">
+                <div className="work-image">
+                  <img src="" alt="" />
+                  <a href="https://binat-businesswear.com">
+                    <span className='material-symbols-outlined'>
+                      captive_portal
+                    </span>
+                  </a>
+                </div>
+                <div className="work-content">
+                  <h5><strong>E-Commerce Web |</strong> Team Project</h5>
+                  <h4>Binat</h4>
+                </div>
+
+                <span className="work-number">2</span>
+              </div>
+
+              <div className="work-card">
+                <div className="work-image">
+                  <img src="" alt="" />
+                  <a href="https://binat-businesswear.com">
+                    <span className='material-symbols-outlined'>
+                      captive_portal
+                    </span>
+                  </a>
+                </div>
+                <div className="work-content">
+                  <h5><strong>E-Commerce Web |</strong> Team Project</h5>
+                  <h4>Binat</h4>
+                </div>
+
+                <span className="work-number">3</span>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
