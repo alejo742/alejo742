@@ -466,6 +466,12 @@ main {
 .work-section-wrapper .main-section-title {
     color: var(--dark-grey);
 }
+@media only screen and (max-width: 400px) {
+    .work-section-wrapper .main-section-title {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .work-cards-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -588,7 +594,7 @@ main {
 }
 @media only screen and (max-width: 700px) {
     .work-section-wrapper {
-        padding: 3rem 4rem;
+        padding: 3rem 5rem 3rem 3rem;
     }
     .work-cards-wrapper {
         grid-template-columns: 1fr;
