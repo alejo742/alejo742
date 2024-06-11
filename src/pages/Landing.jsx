@@ -333,9 +333,15 @@ function Landing() {
                   <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                   </a>
+                  <a target='_blank' href="https://www.djangoproject.com">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+                  </a>
+                  <a target='_blank' href="https://www.postgresql.org">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" />
+                  </a>
+                  <a target='_blank' href="https://aws.amazon.com">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                  </a>
                   </div>
                 </div>
 
