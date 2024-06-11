@@ -12,6 +12,14 @@ function Navbar() {
       navbarMobile.classList.toggle('active');
     });
 
+    const navbarAnchors = document.querySelectorAll('.main-navbar-anchor, .main-navbar-contact');
+    navbarAnchors.forEach(anchor => {
+      anchor.addEventListener('click', () => {
+        navbarBurger.classList.toggle('open');
+        navbarMobile.classList.toggle('active');
+      });
+    });
+
     const navbarWrapper = document.querySelector('.main-navbar-wrapper')
     window.addEventListener('scroll', () => {
       if(window.scrollY > 0) {
