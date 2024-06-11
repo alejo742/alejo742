@@ -12,6 +12,7 @@ import laptopMural from '../assets/backgrounds/mural-dev.png';
 
 //* work section image imports
 import rectangleBackground from '../assets/backgrounds/grey-rectangle-bg.svg';
+import binatImage from '../assets/images/binat-image.svg'
 
 function Landing() {
   useEffect(() => {
@@ -311,7 +312,7 @@ function Landing() {
             <div className="work-cards-wrapper">
               <div className="work-card">
                 <div className="work-image">
-                  <img src="" alt="" />
+                  <img src={binatImage} alt="" />
                   <a href="https://binat-businesswear.com">
                     <span className='material-symbols-outlined'>
                       captive_portal
@@ -321,43 +322,24 @@ function Landing() {
                 <div className="work-content">
                   <h5><strong>E-Commerce Web |</strong> Team Project</h5>
                   <h4>Binat</h4>
+                  <p>Full-stack e-commerce website for a German business clothing startup.</p>
+                  <div className="work-stack">
+                  <a target="_blank" href="https://www.w3.org/html/">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                  </a>
+                  <a target="_blank" href="https://www.w3schools.com/css/">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                  </a>
+                  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                  </a>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                  </div>
                 </div>
 
                 <span className="work-number">1</span>
-              </div>
-
-              <div className="work-card">
-                <div className="work-image">
-                  <img src="" alt="" />
-                  <a href="https://binat-businesswear.com">
-                    <span className='material-symbols-outlined'>
-                      captive_portal
-                    </span>
-                  </a>
-                </div>
-                <div className="work-content">
-                  <h5><strong>E-Commerce Web |</strong> Team Project</h5>
-                  <h4>Binat</h4>
-                </div>
-
-                <span className="work-number">2</span>
-              </div>
-
-              <div className="work-card">
-                <div className="work-image">
-                  <img src="" alt="" />
-                  <a href="https://binat-businesswear.com">
-                    <span className='material-symbols-outlined'>
-                      captive_portal
-                    </span>
-                  </a>
-                </div>
-                <div className="work-content">
-                  <h5><strong>E-Commerce Web |</strong> Team Project</h5>
-                  <h4>Binat</h4>
-                </div>
-
-                <span className="work-number">3</span>
               </div>
             </div>
           </div>
