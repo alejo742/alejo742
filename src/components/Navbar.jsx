@@ -35,21 +35,21 @@ function Navbar() {
             <div></div>
             <div></div>
           </div>
-          <div className="main-navbar-banner">
+          <a className="main-navbar-banner" href='#hero-section'>
             <span className="banner-dot"></span>
             <h1>ALEJANDRO</h1>
-          </div>
+          </a>
           <div className="main-navbar-links">
-            <a className="main-navbar-anchor" href='#'>About</a>
-            <a className="main-navbar-anchor" href='#'>Skills</a>
-            <a className="main-navbar-anchor" href='#'>My Work</a>
+            <a className="main-navbar-anchor" href='#about-section'>About</a>
+            <a className="main-navbar-anchor" href='#skills-section'>Skills</a>
+            <a className="main-navbar-anchor" href='work-section'>My Work</a>
             <a className="main-navbar-button main-navbar-resume" href='#'>
               <span className='material-symbols-outlined'>
                 demography
               </span>
               My Resumé
             </a>
-            <a className="main-navbar-button main-navbar-contact" href='#'>
+            <a className="main-navbar-button main-navbar-contact" href='#contact-section'>
               <span className='material-symbols-outlined'>
                 connect_without_contact
               </span>
@@ -59,16 +59,16 @@ function Navbar() {
         </div>
         <div className="main-navbar-mobile">
           <div className="main-navbar-links">
-            <a className="main-navbar-anchor" href='#'>About</a>
-            <a className="main-navbar-anchor" href='#'>Skills</a>
-            <a className="main-navbar-anchor" href='#'>My Work</a>
+            <a className="main-navbar-anchor" href='#about-section'>About</a>
+            <a className="main-navbar-anchor" href='#skills-sections'>Skills</a>
+            <a className="main-navbar-anchor" href='#work-section'>My Work</a>
             <a className="main-navbar-button main-navbar-resume" href='#'>
               <span className='material-symbols-outlined'>
                 demography
               </span>
               My Resumé
             </a>
-            <a className="main-navbar-button main-navbar-contact" href='#'>
+            <a className="main-navbar-button main-navbar-contact" href='#contact-section'>
               <span className='material-symbols-outlined'>
                 connect_without_contact
               </span>
