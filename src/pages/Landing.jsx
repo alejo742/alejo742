@@ -12,7 +12,10 @@ import laptopMural from '../assets/backgrounds/mural-dev.png';
 
 //* work section image imports
 import rectangleBackground from '../assets/backgrounds/grey-rectangle-bg.svg';
-import binatImage from '../assets/images/binat-image.svg'
+import binatImage from '../assets/images/binat-image.svg';
+
+//* contact section image import
+import laptopImage from '../assets/images/laptop-image.jpg';
 
 function Landing() {
   useEffect(() => {
@@ -333,15 +336,60 @@ function Landing() {
                   <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                   </a>
+                  <a target='_blank' href="https://www.djangoproject.com">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+                  </a>
+                  <a target='_blank' href="https://www.postgresql.org">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" />
+                  </a>
+                  <a target='_blank' href="https://aws.amazon.com">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                  </a>
                   </div>
                 </div>
 
                 <span className="work-number">1</span>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="contact-section" id="contact-section">
+          <div className="contact-image">
+            <img src={laptopImage} alt="" />
+          </div>
+          <div className="contact-wrapper">
+            <h3 className="main-section-title">Here to <strong>help.</strong></h3>
+            <form className='contact-form' action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="389bb25c-ee20-466b-97ca-85e10b19a55e" />
+
+              <div className="double-input">
+                <div className="contact-input-holder">
+                  <label htmlFor="contact-name-input">Your Name</label>
+                  <input placeholder='Type here...' type='text' name="name" id="contact-name-input" className='contact-input' />
+                </div>
+
+                <div className="contact-input-holder">
+                  <label htmlFor="contact-email-input">Email</label>
+                  <input placeholder='Type here...' type='email' name="email" id="contact-email-input" className='contact-input' />
+                </div>
+              </div>
+
+              <div className="contact-input-holder">
+                <label htmlFor="contact-message-input">Your Message</label>
+                <textarea rows={10} placeholder='Type here...' name="message" id="contact-message-input" className='contact-input'></textarea>
+              </div>
+
+              {/* Honeypot Spam Protection */}
+              <input type="checkbox" name="botcheck" hidden />
+
+              <button className="contact-submit-button" type='submit'>
+                <span className='material-symbols-outlined'>
+                  forward_to_inbox
+                </span>
+                Send
+              </button>
+            </form>
           </div>
         </section>
       </main>
