@@ -12,11 +12,51 @@
 
 /*styling for a colored round dot*/
 .banner-dot {
-    border-radius: 50%;
-    aspect-ratio: 1/1;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 3rem;
+  transition: all 0.3s;
+}
+.banner-dot:hover {
+  transform: translateY(-0.3rem);
+}
+.banner-dot .dot {
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 2rem;
+  height: auto;
+  background-color: var(--beige);
+}
+@keyframes oscilate {
+  0% {
+    width: 3rem;
+  }
+  50% {
     width: 2rem;
-    height: auto;
-    background-color: var(--beige);
+  }
+  100% {
+    width: 3rem;
+  }
+}
+.banner-dot .dot-bg {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 3rem;
+  height: auto;
+  background-color: var(--beige);
+  opacity: 0.3;
+  animation: oscilate 1s infinite ease-out;
 }
 .main-section-title {
   font-size: 5rem;
