@@ -44,7 +44,10 @@ function Navbar() {
             <div></div>
           </div>
           <a className="main-navbar-banner" href='#hero-section'>
-            <span className="banner-dot"></span>
+            <span className="banner-dot">
+              <div className="dot"></div>
+              <div className="dot-bg"></div>
+            </span>
             <h1>ALEJANDRO</h1>
           </a>
           <div className="main-navbar-links">
