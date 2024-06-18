@@ -20,32 +20,32 @@ import laptopImage from '../assets/images/laptop-image.jpg';
 function Landing() {
   useEffect(() => {
     const workDisplayCards = document.querySelectorAll('.work-card');
-    let cardColumnCounter = 1
+    let cardColumnCounter = 1;
     workDisplayCards.forEach((card) => {
       if(window.innerWidth > 1100)  {
         if(cardColumnCounter == 1) {
-          card.style.marginTop = "0rem"
-          cardColumnCounter = 2
+          card.style.marginTop = "0rem";
+          cardColumnCounter = 2;
         }
         else if(cardColumnCounter == 2) {
-          card.style.marginTop = "8rem"
-          cardColumnCounter = 3
+          card.style.marginTop = "8rem";
+          cardColumnCounter = 3;
         }
         else if(cardColumnCounter == 3) {
-          card.style.marginTop = "16rem"
-          cardColumnCounter = 1
-        }
+          card.style.marginTop = "16rem";
+          cardColumnCounter = 1;
+        };
       }
 
       else if(window.innerWidth > 700) {
         if(cardColumnCounter == 1) {
-          card.style.marginTop = "0rem"
-          cardColumnCounter = 2
+          card.style.marginTop = "0rem";
+          cardColumnCounter = 2;
         }
         else if(cardColumnCounter == 2) {
-          card.style.marginTop = "8rem"
-          cardColumnCounter = 1
-        }
+          card.style.marginTop = "8rem";
+          cardColumnCounter = 1;
+        };
       }
     });
   }, []);
