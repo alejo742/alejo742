@@ -10,6 +10,41 @@
   --navbar-height: 7rem;
 }
 
+/*the preloader*/
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100dvh;
+  transition: opacity 0.5s;
+}
+.preloader.loaded {
+  opacity: 0;
+}
+.loader {
+  --d: 4rem;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  color: var(--beige);
+  box-shadow: 
+    calc(1*var(--d))      calc(0*var(--d))     0 0,
+    calc(0.707*var(--d))  calc(0.707*var(--d)) 0 4px,
+    calc(0*var(--d))      calc(1*var(--d))     0 6px,
+    calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 6px,
+    calc(-1*var(--d))     calc(0*var(--d))     0 8px,
+    calc(-0.707*var(--d)) calc(-0.707*var(--d))0 10px,
+    calc(0*var(--d))      calc(-1*var(--d))    0 12px;
+  animation: rotateLoader 2s infinite steps(64);
+}
+@keyframes rotateLoader {
+  100% {transform: rotate(2turn)}
+}
+
 /*styling for a colored round dot*/
 .banner-dot {
   position: relative;
