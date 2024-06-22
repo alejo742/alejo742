@@ -8,11 +8,20 @@
   --dark-teal: #A7C4CA;
   --beige: #E8AF7A;
 }
+@keyframes paneDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: none;
+    }
+}
 .main-navbar {
     position: fixed;
     z-index: 9999;
     background-color: var(--white);
     width: 100%;
+    animation: paneDown 1s ease-out;
 }
 .main-navbar-wrapper {
     background-color: var(--white);
