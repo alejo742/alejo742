@@ -13,7 +13,7 @@
     opacity: 0;
     position: relative;
     width: 100%;
-    transition: opacity 0.5s;
+    transition: opacity 0.3s;
 }
 .landing-wrapper.loaded {
     opacity: 1;
@@ -44,17 +44,20 @@ main {
 .hero-section .left {
     gap: 1rem;
 }
+.hero-section .left div:has(h2.text-animate) {
+    overflow: hidden;
+}
 .hero-section .left h2 {
     font-size: 7rem;
     font-weight: 700;
 }
-.hero-section .left h2:nth-child(1) {
+.hero-section .left div:nth-child(1) h2 {
     color: var(--dark-grey);
 }
-.hero-section .left h2:nth-child(2) {
+.hero-section .left div:nth-child(2) h2 {
     color: var(--light-grey);
 }
-.hero-section .left h2:nth-child(3) {
+.hero-section .left div:nth-child(3) h2 {
     color: var(--beige);
 }
 .hero-section .left p {
@@ -112,7 +115,8 @@ main {
     align-items: flex-end;
 }
 .hero-section .right img {
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 100%;
     height: 100%;
 }
@@ -146,8 +150,7 @@ main {
 
 /*=== about section ===*/
 .about-section {
-    padding: 3rem 5vw;
-    min-height: 100svh;
+    padding: 3rem 5vw 10vh 5vw;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -169,7 +172,8 @@ main {
 .about-data-card {
     background: radial-gradient(100.49% 141.42% at 0% 100%, #BDF0EB 0%, #A7C4CA 100%);
     padding: 0 4rem;
-    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,6 +192,8 @@ main {
     font-size: 5rem;
 }
 .about-main-button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     border-radius: 1000rem;
     padding: 1rem 3rem;
@@ -206,7 +212,8 @@ main {
 
 .about-intro-card {
     background: radial-gradient(100.49% 141.42% at 0% 100%, rgba(232, 175, 122, 0.50) 0%, #F0F0F0 100%);
-    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -253,7 +260,8 @@ main {
 .about-image-card img {
     width: 100%;
     max-height: 24rem;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 3rem;
 }
 
@@ -417,6 +425,8 @@ main {
 }
 
 .skills-resume-button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     background-color: var(--light-teal);
     color: var(--dark-grey);
@@ -457,8 +467,10 @@ main {
     z-index: 1;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }
 .work-section-wrapper {
     position: relative;
@@ -480,7 +492,8 @@ main {
 .work-cards-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 6vw;
+    -moz-column-gap: 6vw;
+         column-gap: 6vw;
     row-gap: 3rem;
 }
 .work-card {
@@ -500,7 +513,8 @@ main {
 .work-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 3rem;
 }
 .work-image a {
@@ -562,7 +576,8 @@ main {
 }
 .work-stack img {
     aspect-ratio: 1/1;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 2rem;
     height: auto;
     transition: all 0.3s;
@@ -590,7 +605,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -622,8 +640,10 @@ main {
 .contact-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }
 .contact-wrapper {
     padding: 5rem 5vw;
@@ -668,6 +688,18 @@ main {
     resize: none;
     transition: all 0.3s;
 }
+.contact-input::-webkit-input-placeholder {
+    color: #9a9a9a;
+}
+.contact-input::-moz-placeholder {
+    color: #9a9a9a;
+}
+.contact-input:-ms-input-placeholder {
+    color: #9a9a9a;
+}
+.contact-input::-ms-input-placeholder {
+    color: #9a9a9a;
+}
 .contact-input::placeholder {
     color: #9a9a9a;
 }
@@ -678,6 +710,8 @@ main {
 .contact-submit-button {
     margin-top: 3rem;
     border: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     color: #FFF;
     font-size: 1.4rem;

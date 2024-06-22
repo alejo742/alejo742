@@ -12,7 +12,7 @@
 
 /*the preloader*/
 .preloader {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -20,7 +20,7 @@
   align-items: center;
   width: 100%;
   height: 100dvh;
-  transition: opacity 0.5s;
+  transition: opacity 0.3s;
 }
 .preloader.loaded {
   opacity: 0;
@@ -39,10 +39,75 @@
     calc(-1*var(--d))     calc(0*var(--d))     0 8px,
     calc(-0.707*var(--d)) calc(-0.707*var(--d))0 10px,
     calc(0*var(--d))      calc(-1*var(--d))    0 12px;
-  animation: rotateLoader 2s infinite steps(64);
+  -webkit-animation: rotateLoader 2s infinite steps(64);
+          animation: rotateLoader 2s infinite steps(64);
+}
+@-webkit-keyframes rotateLoader {
+  100% {transform: rotate(2turn)}
 }
 @keyframes rotateLoader {
   100% {transform: rotate(2turn)}
+}
+
+/*animation styles*/
+@-webkit-keyframes textAnimate {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes textAnimate {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeAnimate {
+  0% {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes fadeAnimate {
+  0% {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+.text-animate {
+  transform: translateY(100%);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.text-animate.animate-active {
+  -webkit-animation-name: textAnimate;
+          animation-name: textAnimate;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.fade-animate {
+  transform: translateY(4rem);
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.fade-animate.animate-active {
+  -webkit-animation-name: fadeAnimate;
+          animation-name: fadeAnimate;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 /*styling for a colored round dot*/
@@ -69,6 +134,17 @@
   height: auto;
   background-color: var(--beige);
 }
+@-webkit-keyframes oscilate {
+  0% {
+    width: 3rem;
+  }
+  50% {
+    width: 2rem;
+  }
+  100% {
+    width: 3rem;
+  }
+}
 @keyframes oscilate {
   0% {
     width: 3rem;
@@ -91,7 +167,11 @@
   height: auto;
   background-color: var(--beige);
   opacity: 0.3;
-  animation: oscilate 1s infinite ease-out;
+  -webkit-animation: oscilate 1s infinite ease-out;
+          animation: oscilate 1s infinite ease-out;
+}
+div:has(> .main-section-title) {
+  overflow: hidden;
 }
 .main-section-title {
   font-size: 5rem;

@@ -56,11 +56,11 @@ function Landing() {
       <main>
         <section className="hero-section" id='hero-section'>
           <div className="left">
-            <h2>Software.</h2>
-            <h2>People.</h2>
-            <h2>Me.</h2>
-            <p>Creating and designing user-oriented software solutions to change people's lives and nurture our vision of the world.</p>
-            <div className="hero-actions">
+            <div><h2 className='text-animate' style={{animationDelay: "0.1s"}}>Software.</h2></div>
+            <div><h2 className='text-animate' style={{animationDelay: "0.3s"}}>People.</h2></div>
+            <div><h2 className='text-animate' style={{animationDelay: "0.5s"}}>Me.</h2></div>
+            <p className='fade-animate' style={{animationDelay: "0.5s"}}>Creating and designing user-oriented software solutions to change people's lives and nurture our vision of the world.</p>
+            <div className="hero-actions fade-animate" style={{animationDelay: "0.6s"}}>
               <a href="#about-section" className='hero-aboutme-button'>
                 <span className='material-symbols-outlined'>
                   account_circle
@@ -78,13 +78,13 @@ function Landing() {
             </div>
           </div>
           <div className="right">
-            <img src={workspaceImage} alt="neutral workspace" />
+            <img className='fade-animate' src={workspaceImage} alt="neutral workspace" style={{animationDelay: "0.6s"}}/>
           </div>
         </section>
 
         <section className="about-section" id='about-section'>
           <div className="top">
-            <div className="about-card about-intro-card">
+            <div className="about-card about-intro-card scrollable fade-animate">
               <div className="about-intro-content">
                 <h4>I'm <strong>Alejandro Manrique</strong>, a <strong>full-stack developer</strong> and <strong>college student</strong>.</h4>
                 <p>As an aspiring software engineer, my journey as a developer has been shaped by a profound human-centered vision. The main purpose of my path is to follow an impact-driven career as a developer.</p>
@@ -96,24 +96,24 @@ function Landing() {
                 Contact me
               </a>
             </div>
-            <div className="about-card about-data-card"></div>
+            <div className="about-card about-data-card scrollable fade-animate" style={{animationDelay: "0.3s"}}></div>
           </div>
 
           <div className="bottom">
             <div className="left">
-              <div className="about-image-card">
+              <div className="about-image-card scrollable fade-animate" style={{animationDelay: "0.1s"}}>
                 <img src={laptopMural} alt="dev mural" />
               </div>
               <div className="about-split-card">
-                <div className="about-card about-data-card">
+                <div className="about-card about-data-card scrollable fade-animate" style={{animationDelay: "0.2s"}}>
                   <h4><strong>50+</strong> clients</h4>
                 </div>
-                <div className="about-card about-data-card">
+                <div className="about-card about-data-card scrollable fade-animate" style={{animationDelay: "0.2s"}}>
                   <h4><strong>3+</strong> years exp.</h4>
                 </div>
               </div>
             </div>
-            <div className="about-card about-more-card">
+            <div className="about-card about-more-card scrollable fade-animate" style={{animationDelay: "0.3s"}}>
             <div className="about-more-content">
                 <h4>Need <strong>more?</strong></h4>
                 <p>Check out my latest work. Sometimes self-crafted or made collaborativelly, always with love and purpose.</p>
@@ -129,8 +129,10 @@ function Landing() {
         </section>
 
         <section className="skills-section" id="skills-section">
-          <h3 className="main-section-title">I'm good at <strong>these...</strong></h3>
-          <div className='skills-slider-container'>
+          <div>
+            <h3 className="main-section-title scrollable fade-animate">I'm good at <strong>these...</strong></h3>
+          </div>
+          <div className='skills-slider-container scrollable fade-animate'>
             <div className="skills-slider-wrapper">
               <ul className="skills-slider">
                 <a target="_blank" href="https://www.w3.org/html/">
@@ -300,7 +302,7 @@ function Landing() {
               </ul>
             </div>
           </div>
-          <a href="" className='skills-resume-button'>
+          <a href="" className='skills-resume-button scrollable fade-animate'>
             <span className='material-symbols-outlined'>
               demography
             </span>
@@ -311,9 +313,11 @@ function Landing() {
         <section className="work-section" id="work-section">
           <img src={rectangleBackground} className="work-section-background" alt="rectangle grey background" />
           <div className="work-section-wrapper">
-            <h3 className="main-section-title">See what <strong>I do.</strong></h3>
+            <div>
+              <h3 className="main-section-title scrollable text-animate">See what <strong>I do.</strong></h3>
+            </div>
             <div className="work-cards-wrapper">
-              <div className="work-card">
+              <div className="work-card scrollable fade-animate" style={{animationDelay: "0.1s"}}>
                 <div className="work-image">
                   <img src={binatImage} alt="Binat Logo" />
                   <a href="https://binat-businesswear.com">
@@ -359,23 +363,25 @@ function Landing() {
             <img src={laptopImage} alt="laptop image" />
           </div>
           <div className="contact-wrapper">
-            <h3 className="main-section-title">Here to <strong>help.</strong></h3>
+            <div>
+              <h3 className="main-section-title scrollable text-animate">Here to <strong>help.</strong></h3>
+            </div>
             <form className='contact-form' action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="389bb25c-ee20-466b-97ca-85e10b19a55e" />
 
               <div className="double-input">
-                <div className="contact-input-holder">
+                <div className="contact-input-holder scrollable fade-animate">
                   <label htmlFor="contact-name-input">Your Name</label>
                   <input placeholder='Type here...' type='text' name="name" id="contact-name-input" className='contact-input' />
                 </div>
 
-                <div className="contact-input-holder">
+                <div className="contact-input-holder scrollable fade-animate" style={{animationDelay: "0.2s"}}>
                   <label htmlFor="contact-email-input">Email</label>
                   <input placeholder='Type here...' type='email' name="email" id="contact-email-input" className='contact-input' />
                 </div>
               </div>
 
-              <div className="contact-input-holder">
+              <div className="contact-input-holder scrollable fade-animate">
                 <label htmlFor="contact-message-input">Your Message</label>
                 <textarea rows={10} placeholder='Type here...' name="message" id="contact-message-input" className='contact-input'></textarea>
               </div>
@@ -383,7 +389,7 @@ function Landing() {
               {/* Honeypot Spam Protection */}
               <input type="checkbox" name="botcheck" hidden />
 
-              <button className="contact-submit-button" type='submit'>
+              <button className="contact-submit-button scrollable fade-animate" type='submit'>
                 <span className='material-symbols-outlined'>
                   forward_to_inbox
                 </span>
