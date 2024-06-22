@@ -8,6 +8,14 @@
   --dark-teal: #A7C4CA;
   --beige: #E8AF7A;
 }
+@-webkit-keyframes paneDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: none;
+    }
+}
 @keyframes paneDown {
     0% {
         transform: translateY(-100%);
