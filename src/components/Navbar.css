@@ -17,11 +17,11 @@
     }
 }
 .main-navbar {
+    transform: translateY(-100%);
     position: fixed;
     z-index: 9999;
     background-color: var(--white);
     width: 100%;
-    animation: paneDown 1s ease-out;
 }
 .main-navbar-wrapper {
     background-color: var(--white);
