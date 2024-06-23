@@ -61,7 +61,7 @@ function Landing() {
             <div><h2 className='text-animate' style={{animationDelay: "0.5s"}}>Me.</h2></div>
             <p className='fade-animate' style={{animationDelay: "0.5s"}}>Creating and designing user-oriented software solutions to change people's lives and nurture our vision of the world.</p>
             <div className="hero-actions fade-animate" style={{animationDelay: "0.6s"}}>
-              <a href="#about-section" className='hero-aboutme-button'>
+              <a data-nosnippet href="#about-section" className='hero-aboutme-button'>
                 <span className='material-symbols-outlined'>
                   account_circle
                 </span> 
@@ -89,7 +89,7 @@ function Landing() {
                 <h4>I'm <strong>Alejandro Manrique</strong>, a <strong>full-stack developer</strong> and <strong>college student</strong>.</h4>
                 <p>As an aspiring software engineer, my journey as a developer has been shaped by a profound human-centered vision. The main purpose of my path is to follow an impact-driven career as a developer.</p>
               </div>
-              <a href="" className="about-main-button about-contact-button">
+              <a data-nosnippet href="#contact-section" className="about-main-button about-contact-button">
                 <span className="material-symbols-outlined">
                   connect_without_contact
                 </span>
@@ -118,7 +118,7 @@ function Landing() {
                 <h4>Need <strong>more?</strong></h4>
                 <p>Check out my latest work. Sometimes self-crafted or made collaborativelly, always with love and purpose.</p>
               </div>
-              <a href="#work-section" className="about-main-button about-more-button">
+              <a data-nosnippet href="#work-section" className="about-main-button about-more-button">
                 See more
                 <span className="material-symbols-outlined">
                   data_loss_prevention
