@@ -51,41 +51,31 @@ function Navbar() {
             <h1>ALEJANDRO</h1>
           </a>
           <div className="main-navbar-links">
-            <a className="main-navbar-anchor" href='#about-section'>About</a>
-            <a className="main-navbar-anchor" href='#skills-section'>Skills</a>
-            <a className="main-navbar-anchor" href='work-section'>My Work</a>
+            <a data-nosnippet className="main-navbar-anchor" href='#about-section'>About</a>
+            <a data-nosnippet className="main-navbar-anchor" href='#skills-section'>Skills</a>
+            <a data-nosnippet className="main-navbar-anchor" href='#work-section'>My Work</a>
+            <a data-nosnippet className="main-navbar-anchor" href='#contact-section'>Contact</a>
             <a className="main-navbar-button main-navbar-resume" href='#'>
               <span className='material-symbols-outlined'>
                 demography
               </span>
-              My Resumé
-            </a>
-            <a className="main-navbar-button main-navbar-contact" href='#contact-section'>
-              <span className='material-symbols-outlined'>
-                connect_without_contact
-              </span>
-              Contact
+              Resumé
             </a>
           </div>
         </div>
         <div className="main-navbar-mobile">
           <div className="main-navbar-links">
-            <a className="main-navbar-anchor" href='#about-section'>About</a>
-            <a className="main-navbar-anchor" href='#skills-sections'>Skills</a>
-            <a className="main-navbar-anchor" href='#work-section'>My Work</a>
-            <a className="main-navbar-button main-navbar-resume" href='#'>
-              <span className='material-symbols-outlined'>
-                demography
-              </span>
-              My Resumé
-            </a>
-            <a className="main-navbar-button main-navbar-contact" href='#contact-section'>
-              <span className='material-symbols-outlined'>
-                connect_without_contact
-              </span>
-              Contact
-            </a>
-          </div>
+              <a data-nosnippet className="main-navbar-anchor" href='#about-section'>About</a>
+              <a data-nosnippet className="main-navbar-anchor" href='#skills-section'>Skills</a>
+              <a data-nosnippet className="main-navbar-anchor" href='#work-section'>My Work</a>
+              <a data-nosnippet className="main-navbar-anchor" href='#contact-section'>Contact</a>
+              <a className="main-navbar-button main-navbar-resume" href='#'>
+                <span className='material-symbols-outlined'>
+                  demography
+                </span>
+                Resumé
+              </a>
+            </div>
         </div>
     </div>
   );

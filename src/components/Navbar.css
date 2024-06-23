@@ -99,10 +99,6 @@
     background-color: var(--light-teal);
     color: var(--dark-grey);
 }
-.main-navbar-contact {
-    background-color: var(--dark-grey);
-    color: var(--white);
-}
 .main-navbar-burger {
     position: absolute;
     top: 50%;
