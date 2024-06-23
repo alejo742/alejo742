@@ -42,16 +42,30 @@ function App() {
       setScrollAnims();
     };
 
-    window.addEventListener('load', () => {
-      const preloader = document.querySelector('.preloader');
-      const landing = document.querySelector('.landing-wrapper');
-      preloader.classList.add('loaded');
+    if(document.readyState === "loading") {
+      window.addEventListener('load', () => {
+        const preloader = document.querySelector('.preloader');
+        const landing = document.querySelector('.landing-wrapper');
+        preloader.classList.add('loaded');
+        setTimeout(() => {
+          preloader.style.display = "none";
+          landing.classList.add('loaded');
+          handleAnims();
+        }, 800);
+      });
+    }
+    else {
       setTimeout(() => {
-        preloader.style.display = "none";
-        landing.classList.add('loaded');
-        handleAnims();
-      }, 800);
-    });
+        const preloader = document.querySelector('.preloader');
+        const landing = document.querySelector('.landing-wrapper');
+        preloader.classList.add('loaded');
+        setTimeout(() => {
+          preloader.style.display = "none";
+          landing.classList.add('loaded');
+          handleAnims();
+        }, 800);
+      }, 800)
+    }
   }, []);
 
   return (
