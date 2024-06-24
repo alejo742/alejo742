@@ -1,6 +1,7 @@
 import './Landing.css'
 import {React, useEffect} from 'react';
 import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
 
 //*hero section image imports
 import linkedinIcon from '../assets/socials/linkedin-dark.svg';
@@ -399,6 +400,7 @@ function Landing() {
           </div>
         </section>
       </main>
+      <Footer/>
     </div>
   );
 }
