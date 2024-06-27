@@ -5,7 +5,7 @@
 
 - 📚 Majoring in **Computer Science**
 
-- 🌱 Currently learning **MongoDB, AWS and React Native**
+- 🌱 Currently learning **Advanced Ruby on Rails, AWS, and Devops**
 
 - 👨‍💻 Check out my website! [https://alejo742.github.io](https://alejo742.github.io/alejo742/)
 
