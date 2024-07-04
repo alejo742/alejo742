@@ -55,7 +55,7 @@ function Navbar() {
             <a data-nosnippet className="main-navbar-anchor" href='#skills-section'>Skills</a>
             <a data-nosnippet className="main-navbar-anchor" href='#work-section'>My Work</a>
             <a data-nosnippet className="main-navbar-anchor" href='#contact-section'>Contact</a>
-            <a className="main-navbar-button main-navbar-resume" href='#'>
+            <a className="main-navbar-button main-navbar-resume" href='https://drive.google.com/file/d/1UVOb734dLB3Ye4UQ-pJ_FFVEK952PRZk/view?usp=sharing' target='_blank'>
               <span className='material-symbols-outlined'>
                 demography
               </span>
@@ -69,7 +69,7 @@ function Navbar() {
               <a data-nosnippet className="main-navbar-anchor" href='#skills-section'>Skills</a>
               <a data-nosnippet className="main-navbar-anchor" href='#work-section'>My Work</a>
               <a data-nosnippet className="main-navbar-anchor" href='#contact-section'>Contact</a>
-              <a className="main-navbar-button main-navbar-resume" href='#'>
+              <a className="main-navbar-button main-navbar-resume" href='https://drive.google.com/file/d/1UVOb734dLB3Ye4UQ-pJ_FFVEK952PRZk/view?usp=sharing' target='_blank'>
                 <span className='material-symbols-outlined'>
                   demography
                 </span>

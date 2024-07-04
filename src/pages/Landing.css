@@ -567,6 +567,20 @@ main {
     font-weight: 400;
 }
 
+.work-tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+.work-tags span {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+}
+
 .work-stack {
     margin-top: 1rem;
     display: flex;

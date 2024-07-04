@@ -14,6 +14,7 @@ import laptopMural from '../assets/backgrounds/mural-dev.png';
 //* work section image imports
 import rectangleBackground from '../assets/backgrounds/grey-rectangle-bg.svg';
 import binatImage from '../assets/images/binat-image.svg';
+import hawkhousingImage from '../assets/images/hawkhousing-image.svg';
 
 //* contact section image import
 import laptopImage from '../assets/images/laptop-image.jpg';
@@ -107,7 +108,7 @@ function Landing() {
               </div>
               <div className="about-split-card">
                 <div className="about-card about-data-card scrollable fade-animate" style={{animationDelay: "0.2s"}}>
-                  <h4><strong>50+</strong> clients</h4>
+                  <h4><strong>30+</strong> clients</h4>
                 </div>
                 <div className="about-card about-data-card scrollable fade-animate" style={{animationDelay: "0.2s"}}>
                   <h4><strong>3+</strong> years exp.</h4>
@@ -303,7 +304,7 @@ function Landing() {
               </ul>
             </div>
           </div>
-          <a href="" className='skills-resume-button scrollable fade-animate'>
+          <a href="https://drive.google.com/file/d/1UVOb734dLB3Ye4UQ-pJ_FFVEK952PRZk/view?usp=sharing" target='_blank' className='skills-resume-button scrollable fade-animate'>
             <span className='material-symbols-outlined'>
               demography
             </span>
@@ -330,30 +331,77 @@ function Landing() {
                 <div className="work-content">
                   <h5><strong>E-Commerce Web |</strong> Team Project</h5>
                   <h4>Binat</h4>
-                  <p>Full-stack e-commerce website for a German business clothing startup.</p>
+                  <p>Full-stack e-commerce website for a German business clothing startup. Deployed with Heroku.</p>
+                  <div className="work-tags">
+                    <span>UI Design</span>
+                    <span>Templates</span>
+                    <span>Resource Admin.</span>
+                  </div>
                   <div className="work-stack">
                   <a target="_blank" href="https://www.w3.org/html/">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
-                  </a>
-                  <a target="_blank" href="https://www.w3schools.com/css/">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
-                  </a>
-                  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
-                  </a>
-                  <a target='_blank' href="https://www.djangoproject.com">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" />
-                  </a>
-                  <a target='_blank' href="https://www.postgresql.org">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" alt="PostgreSQL" />
-                  </a>
-                  <a target='_blank' href="https://aws.amazon.com">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="Amazon Web Services" />
-                  </a>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
+                    </a>
+                    <a target="_blank" href="https://www.w3.org/html/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
+                    </a>
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                    </a>
+                    <a target='_blank' href="https://www.djangoproject.com">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" />
+                    </a>
+                    <a target='_blank' href="https://www.postgresql.org">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" alt="PostgreSQL" />
+                    </a>
+                    <a target='_blank' href="https://aws.amazon.com">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="Amazon Web Services" />
+                    </a>
                   </div>
                 </div>
 
                 <span className="work-number">1</span>
+              </div>
+              <div className="work-card scrollable fade-animate" style={{animationDelay: "0.2s"}}>
+                <div className="work-image">
+                  <img src={hawkhousingImage} alt="HawkHousing Logo" />
+                  <a href="https://hawkhousing.onrender.com">
+                    <span className='material-symbols-outlined'>
+                      captive_portal
+                    </span>
+                  </a>
+                </div>
+                <div className="work-content">
+                  <h5><strong>Web Application |</strong> Team Project</h5>
+                  <h4>HawkHousing</h4>
+                  <p>Full-stack web application to ease off-campus housing search for Lehigh students. Deployed with Render.</p>
+                  <div className="work-tags">
+                    <span>OAuth</span>
+                    <span>UX Design</span>
+                    <span>DevOps</span>
+                  </div>
+                  <div className="work-stack">
+                    <a target="_blank" href="https://www.w3.org/html/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
+                    </a>
+                    <a target="_blank" href="https://www.w3.org/html/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
+                    </a>
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                    </a>
+                    <a target='_blank' href="https://www.ruby-lang.org/en/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-plain.svg" alt="Ruby" />
+                    </a>
+                    <a target="_blank" href="https://rubyonrails.org/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" alt="Ruby on Rails" />
+                    </a>
+                    <a target='_blank' href="https://www.postgresql.org">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" alt="PostgreSQL" />
+                    </a>
+                  </div>
+                </div>
+
+                <span className="work-number">2</span>
               </div>
             </div>
           </div>
