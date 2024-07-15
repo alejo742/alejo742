@@ -6,6 +6,7 @@ import Footer from '../components/Footer.jsx';
 //*hero section image imports
 import linkedinIcon from '../assets/socials/linkedin-dark.svg';
 import githubIcon from '../assets/socials/github-dark.svg';
+import fiverrIcon from '../assets/socials/fiverr-dark.svg';
 import workspaceImage from '../assets/images/alejandro-workspace-img.jpeg';
 
 //* about section image import
@@ -76,6 +77,9 @@ function Landing() {
                 <a target="_blank" href="https://github.com/alejo742">
                   <img src={githubIcon} alt="GitHub" />
                 </a>
+                <a target="_blank" href="https://www.fiverr.com/alejandroman742">
+                  <img src={fiverrIcon} alt="Fiverr" />
+                </a>
               </div>
             </div>
           </div>
@@ -88,8 +92,8 @@ function Landing() {
           <div className="top">
             <div className="about-card about-intro-card scrollable fade-animate">
               <div className="about-intro-content">
-                <h4>I'm <strong>Alejandro Manrique</strong>, a <strong>full-stack developer</strong> and <strong>college student</strong>.</h4>
-                <p>As an aspiring software engineer, my journey as a developer has been shaped by a profound human-centered vision. The main purpose of my path is to follow an impact-driven career as a developer.</p>
+                <h4>I'm <strong>Alejandro Manrique</strong>, a <strong>full-stack developer</strong> and first-year <strong>college student</strong>.</h4>
+                <p>As an 19-year old aspiring software engineer, my journey as a developer has been shaped by a profound human-centered vision. The main purpose of my path is to follow an impact-driven career as a developer.</p>
               </div>
               <a data-nosnippet href="#contact-section" className="about-main-button about-contact-button">
                 <span className="material-symbols-outlined">
