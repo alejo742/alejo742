@@ -93,7 +93,7 @@ function Landing() {
             <div className="about-card about-intro-card scrollable fade-animate">
               <div className="about-intro-content">
                 <h4>I'm <strong>Alejandro Manrique</strong>, a <strong>full-stack developer</strong> and first-year <strong>college student</strong>.</h4>
-                <p>As an 19-year old aspiring software engineer, my journey as a developer has been shaped by a profound human-centered vision. The main purpose of my path is to follow an impact-driven career as a developer.</p>
+                <p>As a 19-year old aspiring software engineer, my journey as a developer has been shaped by a profound human-centered vision. The main purpose of my path is to follow an impact-driven career as a developer.</p>
               </div>
               <a data-nosnippet href="#contact-section" className="about-main-button about-contact-button">
                 <span className="material-symbols-outlined">
