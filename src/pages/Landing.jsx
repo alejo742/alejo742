@@ -326,7 +326,7 @@ function Landing() {
               <div className="work-card scrollable fade-animate" style={{animationDelay: "0.1s"}}>
                 <div className="work-image">
                   <img src={binatImage} alt="Binat Logo" />
-                  <a href="https://binat-businesswear.com">
+                  <a target='_blank' href="https://binat-businesswear.com">
                     <span className='material-symbols-outlined'>
                       captive_portal
                     </span>
@@ -368,7 +368,7 @@ function Landing() {
               <div className="work-card scrollable fade-animate" style={{animationDelay: "0.2s"}}>
                 <div className="work-image">
                   <img src={hawkhousingImage} alt="HawkHousing Logo" />
-                  <a href="https://hawkhousing.onrender.com">
+                  <a target='_blank' href="https://hawkhousing.onrender.com">
                     <span className='material-symbols-outlined'>
                       captive_portal
                     </span>
