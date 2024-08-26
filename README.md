@@ -1,5 +1,5 @@
 <h1 align="center">Hey! 👋, I'm Alejandro</h1>
-<h3 align="center">A Peruvian freelance full-stack developer and freshman at Dartmouth College.</h3>
+<h3 align="center">A Peruvian freelance full-stack developer. Dartmouth College '28.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=alejo742&label=Profile%20views&color=0e75b6&style=flat" alt="alejo742" /> </p>
 
