@@ -10,8 +10,7 @@ export default defineConfig(({command}) => {
     server: {
       watch: {
         usePolling: true
-      }
+      },
     },
-    base: '/alejo742/',
   };
 });
