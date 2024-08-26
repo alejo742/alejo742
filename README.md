@@ -7,7 +7,7 @@
 
 - 🌱 Currently learning **Advanced Ruby on Rails, AWS, and Devops**
 
-- 👨‍💻 Check out my website! [https://alejo742.github.io](https://alejo742.github.io/alejo742/)
+- 👨‍💻 Check out my website! [https://alejandromanrique.dev](https://alejandromanrique.dev)
 
 - 📫 Reach me at alejandromanriquenunez@gmail.com
 
