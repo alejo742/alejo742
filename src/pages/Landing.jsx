@@ -368,7 +368,7 @@ function Landing() {
               <div className="work-card scrollable fade-animate" style={{animationDelay: "0.2s"}}>
                 <div className="work-image">
                   <img src={hawkhousingImage} alt="HawkHousing Logo" />
-                  <a target='_blank' href="https://hawkhousing.onrender.com">
+                  <a target='_blank' href="https://hawkhousing-1v3y.onrender.com">
                     <span className='material-symbols-outlined'>
                       captive_portal
                     </span>
