@@ -1,5 +1,5 @@
 <h1 align="center">Hey! 👋, I'm Alejandro</h1>
-<h3 align="center">A Peruvian freelance full-stack developer and freshman at Dartmouth College.</h3>
+<h3 align="center">A Peruvian freelance full-stack developer. Dartmouth College '28.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=alejo742&label=Profile%20views&color=0e75b6&style=flat" alt="alejo742" /> </p>
 
@@ -7,7 +7,7 @@
 
 - 🌱 Currently learning **Advanced Ruby on Rails, AWS, and Devops**
 
-- 👨‍💻 Check out my website! [https://alejo742.github.io](https://alejo742.github.io/alejo742/)
+- 👨‍💻 Check out my website! [https://alejandromanrique.dev](https://alejandromanrique.dev)
 
 - 📫 Reach me at alejandromanriquenunez@gmail.com
 
