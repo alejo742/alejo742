@@ -16,6 +16,7 @@ import laptopMural from '../assets/backgrounds/mural-dev.png';
 import rectangleBackground from '../assets/backgrounds/grey-rectangle-bg.svg';
 import binatImage from '../assets/images/binat-image.svg';
 import hawkhousingImage from '../assets/images/hawkhousing-image.svg';
+import radioImage from '../assets/images/radio-image.svg';
 
 //* contact section image import
 import laptopImage from '../assets/images/laptop-image.jpg';
@@ -153,8 +154,8 @@ function Landing() {
                 <a target="_blank" href="https://reactjs.org/">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React.js" />
                 </a>
-                <a target="_blank" href="https://nodejs.org/">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                <a target="_blank" href="https://nextjs.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="NextJS"/>
                 </a>
                 <a target="_blank" href="https://www.figma.com/">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" />
@@ -194,8 +195,8 @@ function Landing() {
                 <a target="_blank" href="https://reactjs.org/">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React.js" />
                 </a>
-                <a target="_blank" href="https://nodejs.org/">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                <a target="_blank" href="https://nextjs.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="NextJS"/>
                 </a>
                 <a target="_blank" href="https://www.figma.com/">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" />
@@ -237,8 +238,8 @@ function Landing() {
                 <a target="_blank" href="https://reactjs.org/">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React.js" />
                 </a>
-                <a target="_blank" href="https://nodejs.org/">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                <a target="_blank" href="https://nextjs.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="NextJS"/>
                 </a>
                 <a target="_blank" href="https://www.figma.com/">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" />
@@ -278,8 +279,8 @@ function Landing() {
                 <a target="_blank" href="https://reactjs.org/">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React.js" />
                 </a>
-                <a target="_blank" href="https://nodejs.org/">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                <a target="_blank" href="https://nextjs.org/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="NextJS"/>
                 </a>
                 <a target="_blank" href="https://www.figma.com/">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" />
@@ -379,8 +380,8 @@ function Landing() {
                   <h4>HawkHousing</h4>
                   <p>Full-stack web application to ease off-campus housing search for Lehigh students. Deployed with Render.</p>
                   <div className="work-tags">
-                    <span>OAuth</span>
-                    <span>UX Design</span>
+                    <span>OAuth2.0</span>
+                    <span>API Connection</span>
                     <span>DevOps</span>
                   </div>
                   <div className="work-stack">
@@ -406,6 +407,48 @@ function Landing() {
                 </div>
 
                 <span className="work-number">2</span>
+              </div>
+              <div className="work-card scrollable fade-animate" style={{animationDelay: "0.3s"}}>
+                <div className="work-image">
+                  <img src={radioImage} alt="HawkHousing Logo" />
+                  <a target='_blank' href="https://radioconexion.vercel.app/">
+                    <span className='material-symbols-outlined'>
+                      captive_portal
+                    </span>
+                  </a>
+                </div>
+                <div className="work-content">
+                  <h5><strong>Website |</strong> Duo Project</h5>
+                  <h4>Radio Conexión</h4>
+                  <p>Radio player front-end website with 10k+ monthly listeners</p>
+                  <div className="work-tags">
+                    <span>3D Display</span>
+                    <span>Hooks & Animations</span>
+                    <span>UI Design</span>
+                  </div>
+                  <div className="work-stack">
+                    <a target="_blank" href="https://www.w3.org/html/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
+                    </a>
+                    <a target="_blank" href="https://www.w3.org/html/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
+                    </a>
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                    </a>
+                    <a target='_blank' href="https://reactjs.org/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+                    </a>
+                    <a target="_blank" href="https://nextjs.org/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="NextJS" />
+                    </a>
+                    <a target='_blank' href="https://threejs.org/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg" alt="ThreeJS" />
+                    </a>
+                  </div>
+                </div>
+
+                <span className="work-number">3</span>
               </div>
             </div>
           </div>
