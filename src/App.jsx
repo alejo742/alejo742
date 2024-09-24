@@ -66,6 +66,41 @@ function App() {
         }, 800);
       }, 800)
     }
+
+    // smooth custom scroll
+    let isScrolling = false;
+    let targetScroll = window.scrollY;
+
+    function smoothScroll() {
+        if (!isScrolling) {
+            return;
+        }
+        let currentScroll = window.scrollY;
+        let distance = targetScroll - currentScroll;
+        let step = distance / 10;
+
+        if (Math.abs(step) < 1) {
+            window.scrollTo(0, targetScroll);
+            isScrolling = false;
+        } else {
+            window.scrollTo(0, currentScroll + step);
+            requestAnimationFrame(smoothScroll);
+        }
+    }
+
+    window.addEventListener('wheel', function(event) {
+        event.preventDefault();
+        isScrolling = true;
+        targetScroll += event.deltaY;
+        targetScroll = Math.max(0, Math.min(targetScroll, document.body.scrollHeight - window.innerHeight));
+        smoothScroll();
+    }, { passive: false });
+
+    window.addEventListener('scroll', function() {
+        if (!isScrolling) {
+            targetScroll = window.scrollY;
+        }
+    });
   }, []);
 
   return (
