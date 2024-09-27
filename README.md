@@ -5,7 +5,7 @@
 
 - 📚 Majoring in **Computer Science**
 
-- 🌱 Currently learning **Advanced Ruby on Rails, AWS, and Devops**
+- 🌱 Currently learning **SQL, AWS, and DevOps**
 
 - 👨‍💻 Check out my website! [https://alejandromanrique.dev](https://alejandromanrique.dev)
 
