@@ -336,9 +336,9 @@ function Landing() {
                 <div className="work-content">
                   <h5><strong>E-Commerce Web |</strong> Team Project</h5>
                   <h4>Binat</h4>
-                  <p>Full-stack e-commerce website for a German business clothing startup. Deployed with Heroku.</p>
+                  <p>Full-stack e-commerce website for a business-clothing startup. Includes an administrative panel (dashboard) for users. Deployed with Heroku.</p>
                   <div className="work-tags">
-                    <span>UI Design</span>
+                    <span>Version Control</span>
                     <span>Templates</span>
                     <span>Resource Admin.</span>
                   </div>
@@ -378,7 +378,7 @@ function Landing() {
                 <div className="work-content">
                   <h5><strong>Web Application |</strong> Team Project</h5>
                   <h4>HawkHousing</h4>
-                  <p>Full-stack web application to ease off-campus housing search for Lehigh students. Deployed with Render.</p>
+                  <p>Full-stack web application that eases off-campus housing search for college students using AI personalized matching. Deployed with Render.</p>
                   <div className="work-tags">
                     <span>OAuth2.0</span>
                     <span>API Connection</span>
@@ -420,7 +420,7 @@ function Landing() {
                 <div className="work-content">
                   <h5><strong>Website |</strong> Duo Project</h5>
                   <h4>Radio Conexión</h4>
-                  <p>Radio player front-end website with 10k+ monthly listeners</p>
+                  <p>An interactive website featuring an livestream player for a radio station with 10k+ monthly listeners. Deployed with Vercel.</p>
                   <div className="work-tags">
                     <span>3D Display</span>
                     <span>Hooks & Animations</span>
