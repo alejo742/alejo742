@@ -37,9 +37,6 @@
 </p>
 
 
-
-### SHHH... you shouldn't be seeing this if you're not from DALI.
-
 ## What is this?
 
 - This is my personal website, built completely from scratch, zero graphic libraries, just pure CSS and JS love.
