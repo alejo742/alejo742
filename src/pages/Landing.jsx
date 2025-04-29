@@ -17,6 +17,7 @@ import rectangleBackground from '../assets/backgrounds/grey-rectangle-bg.svg';
 import binatImage from '../assets/images/binat-image.svg';
 import hawkhousingImage from '../assets/images/hawkhousing-image.svg';
 import radioImage from '../assets/images/radio-image.svg';
+import confiesaImage from '../assets/images/confiesa-image.svg';
 
 //* contact section image import
 import laptopImage from '../assets/images/laptop-image.jpg';
@@ -93,7 +94,7 @@ function Landing() {
           <div className="top">
             <div className="about-card about-intro-card scrollable fade-animate">
               <div className="about-intro-content">
-                <h4>I'm <strong>Alejandro Manrique</strong>, a <strong>full-stack developer</strong> and first-year <strong>college student</strong>.</h4>
+                <h4>I'm <strong>Alejandro Manrique</strong>, a <strong>full-stack developer</strong> and <strong>college student</strong>.</h4>
                 <p>As a 19-year old aspiring software engineer, my journey as a developer has been shaped by a profound human-centered vision. The main purpose of my path is to follow an impact-driven career as a developer.</p>
               </div>
               <a data-nosnippet href="#contact-section" className="about-main-button about-contact-button">
@@ -256,6 +257,12 @@ function Landing() {
                 <a target="_blank" href="https://www.postgresql.org/">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
                 </a>
+                <a target='_blank' href="https://www.typescriptlang.org/">                
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt='Typescript' />
+                </a>
+                <a target='_blank' href="https://www.firebase.google.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt='Firebase' />
+                </a>
                 <a target="_blank" href="https://kotlinlang.org/">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="Kotlin" />
                 </a>
@@ -297,6 +304,12 @@ function Landing() {
                 <a target="_blank" href="https://www.postgresql.org/">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
                 </a>
+                <a target='_blank' href="https://www.typescriptlang.org/">                
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt='Typescript' />
+                </a>
+                <a target='_blank' href="https://www.firebase.google.com/">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt='Firebase' />
+                </a>
                 <a target="_blank" href="https://kotlinlang.org/">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="Kotlin" />
                 </a>
@@ -336,7 +349,7 @@ function Landing() {
                 <div className="work-content">
                   <h5><strong>E-Commerce Web |</strong> Team Project</h5>
                   <h4>Binat</h4>
-                  <p>Full-stack e-commerce website for a business-clothing startup. Includes an administrative panel (dashboard) for users. Deployed with Heroku.</p>
+                  <p>Full-stack e-commerce website for a German business-clothing startup. Includes an administrative panel (dashboard) for users. Deployed with Heroku.</p>
                   <div className="work-tags">
                     <span>Version Control</span>
                     <span>Templates</span>
@@ -365,6 +378,90 @@ function Landing() {
                 </div>
 
                 <span className="work-number">1</span>
+              </div>
+              <div className="work-card scrollable fade-animate" style={{animationDelay: "0.15s"}}>
+                <div className="work-image">
+                  <img src={confiesaImage} alt="Confiesa Logo" />
+                  <a target='_blank' href="https://confiesa.app/">
+                    <span className='material-symbols-outlined'>
+                      captive_portal
+                    </span>
+                  </a>
+                </div>
+                <div className="work-content">
+                  <h5><strong>Mobile App |</strong> Team Project</h5>
+                  <h4>Confiesa</h4>
+                  <p>A website and full-stack mobile application for Android and iOS that implements an online community for Peruvian students to socialize through private gossip.</p>
+                  <div className="work-tags">
+                    <span>Mobile</span>
+                    <span>Structuring</span>
+                    <span>Back-end</span>
+                  </div>
+                  <div className="work-stack">
+                    <a target='_blank' href="https://reactjs.org/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+                    </a>
+                    <a target="_blank" href="https://www.android.com/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg" />
+                    </a>
+                    <a target='_blank' href="https://www.apple.com/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" />
+                    </a>
+                    <a target='_blank' href="https://www.typescriptlang.org/">                
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt='Typescript' />
+                    </a>
+                    <a target='_blank' href="https://www.firebase.google.com/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt='Firebase' />
+                    </a>
+                    <a target="_blank" href="https://nextjs.org/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="NextJS" />
+                    </a>
+                  </div>
+                </div>
+
+                <span className="work-number">2</span>
+              </div>
+              <div className="work-card scrollable fade-animate" style={{animationDelay: "0.3s"}}>
+                <div className="work-image">
+                  <img src={radioImage} alt="Radio Conexion Logo" />
+                  <a target='_blank' href="https://radioconexion.vercel.app/">
+                    <span className='material-symbols-outlined'>
+                      captive_portal
+                    </span>
+                  </a>
+                </div>
+                <div className="work-content">
+                  <h5><strong>Website |</strong> Duo Project</h5>
+                  <h4>Radio Conexión</h4>
+                  <p>An interactive website featuring an livestream player for a radio station with 10k+ monthly listeners. Deployed with Vercel.</p>
+                  <div className="work-tags">
+                    <span>3D Display</span>
+                    <span>Hooks & Animations</span>
+                    <span>UI Design</span>
+                  </div>
+                  <div className="work-stack">
+                    <a target="_blank" href="https://www.w3.org/html/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
+                    </a>
+                    <a target="_blank" href="https://www.w3.org/html/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
+                    </a>
+                    <a target='_blank' href="https://www.typescriptlang.org/">                
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt='Typescript' />                
+                    </a>
+                    <a target='_blank' href="https://reactjs.org/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+                    </a>
+                    <a target="_blank" href="https://nextjs.org/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="NextJS" />
+                    </a>
+                    <a target='_blank' href="https://threejs.org/">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg" alt="ThreeJS" />
+                    </a>
+                  </div>
+                </div>
+
+                <span className="work-number">3</span>
               </div>
               <div className="work-card scrollable fade-animate" style={{animationDelay: "0.2s"}}>
                 <div className="work-image">
@@ -406,50 +503,9 @@ function Landing() {
                   </div>
                 </div>
 
-                <span className="work-number">2</span>
+                <span className="work-number">4</span>
               </div>
-              <div className="work-card scrollable fade-animate" style={{animationDelay: "0.3s"}}>
-                <div className="work-image">
-                  <img src={radioImage} alt="HawkHousing Logo" />
-                  <a target='_blank' href="https://radioconexion.vercel.app/">
-                    <span className='material-symbols-outlined'>
-                      captive_portal
-                    </span>
-                  </a>
-                </div>
-                <div className="work-content">
-                  <h5><strong>Website |</strong> Duo Project</h5>
-                  <h4>Radio Conexión</h4>
-                  <p>An interactive website featuring an livestream player for a radio station with 10k+ monthly listeners. Deployed with Vercel.</p>
-                  <div className="work-tags">
-                    <span>3D Display</span>
-                    <span>Hooks & Animations</span>
-                    <span>UI Design</span>
-                  </div>
-                  <div className="work-stack">
-                    <a target="_blank" href="https://www.w3.org/html/">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
-                    </a>
-                    <a target="_blank" href="https://www.w3.org/html/">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
-                    </a>
-                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
-                    </a>
-                    <a target='_blank' href="https://reactjs.org/">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
-                    </a>
-                    <a target="_blank" href="https://nextjs.org/">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="NextJS" />
-                    </a>
-                    <a target='_blank' href="https://threejs.org/">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg" alt="ThreeJS" />
-                    </a>
-                  </div>
-                </div>
 
-                <span className="work-number">3</span>
-              </div>
             </div>
           </div>
         </section>
