@@ -1,0 +1,156 @@
+/* Hero section specific styles */
+.hero-section {
+  margin-top: var(--navbar-height);
+  height: calc(100svh - var(--navbar-height));
+  padding: 2rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+}
+
+.hero-section .left, 
+.hero-section .right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section .left {
+  gap: 1rem;
+}
+
+.hero-section .left div:has(h2.text-animate) {
+  overflow: hidden;
+}
+
+.hero-section .left h2 {
+  font-size: 7rem;
+  font-weight: 700;
+}
+
+.hero-section .left div:nth-child(1) h2 {
+  color: var(--dark-grey);
+}
+
+.hero-section .left div:nth-child(2) h2 {
+  color: var(--light-grey);
+}
+
+.hero-section .left div:nth-child(3) h2 {
+  color: var(--beige);
+}
+
+.hero-section .left p {
+  width: min(42rem, 95%);
+  color: var(--grey);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.hero-actions {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.hero-aboutme-button {
+  padding: 1rem 3rem;
+  border-radius: 1000rem;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s;
+}
+
+.hero-aboutme-button:hover {
+  opacity: 0.8;
+}
+
+.hero-aboutme-button > svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: var(--white);
+}
+
+.hero-socials {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-socials a {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.hero-socials a:hover {
+  opacity: 0.8;
+  transform: translateY(-0.5rem);
+  box-shadow: 0 3px 4px var(--light-grey);
+}
+
+.hero-socials a img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+}
+
+.hero-section .right {
+  align-items: flex-end;
+}
+
+.hero-section .right img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* Animation classes */
+.text-animate {
+  /* Add your text animation styles here */
+}
+
+.fade-animate {
+  /* Add your fade animation styles here */
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero-section .left {
+    width: 40%;
+  }
+  .hero-section .right {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section .left {
+    width: 100%;
+    align-items: center;
+  }
+  .hero-section .left p {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .hero-section .right {
+    display: none;
+  }
+}

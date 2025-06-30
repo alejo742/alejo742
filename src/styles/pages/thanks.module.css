@@ -1,0 +1,168 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-grey);
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 2rem;
+  padding: 3rem 4rem;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out, floatUp 1.5s ease-out;
+}
+
+.iconWrapper {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto 2rem;
+  background-color: var(--beige);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 2s infinite;
+}
+
+.icon {
+  font-size: 3.5rem !important;
+  color: white;
+}
+
+.title {
+  color: var(--dark-grey);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.message {
+  color: var(--grey);
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--light-teal), transparent);
+  margin: 2rem 0;
+}
+
+.redirectMessage {
+  color: var(--light-grey);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.homeButton {
+  background-color: var(--beige);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 1000rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: all 0.3s;
+}
+
+.homeButton:hover {
+  background-color: var(--dark-grey);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.shape {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.shape:nth-child(1) {
+  background: radial-gradient(circle, var(--light-teal) 0%, transparent 70%);
+  width: 50vw;
+  height: 50vw;
+  top: -15vw;
+  right: -15vw;
+  opacity: 0.6;
+}
+
+.shape:nth-child(2) {
+  background: radial-gradient(circle, var(--beige) 0%, transparent 70%);
+  width: 70vw;
+  height: 70vw;
+  bottom: -20vw;
+  left: -20vw;
+  opacity: 0.5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(232, 175, 122, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(232, 175, 122, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(232, 175, 122, 0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 2.8rem;
+  }
+  
+  .iconWrapper {
+    width: 6rem;
+    height: 6rem;
+  }
+  
+  .icon {
+    font-size: 3rem !important;
+  }
+}

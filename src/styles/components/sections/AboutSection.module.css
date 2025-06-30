@@ -1,0 +1,238 @@
+/* Root colors are in globals.css */
+
+.about-section {
+  padding: 3rem 5vw 10vh 5vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-section .top {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.about-card {
+  border-radius: 3rem;
+  padding: 3rem;
+  width: 100%;
+}
+
+.about-data-card {
+  background: radial-gradient(100.49% 141.42% at 0% 100%, #BDF0EB 0%, #A7C4CA 100%);
+  padding: 0 4rem;
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-data-card h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: var(--dark-grey);
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.about-data-card h4 strong {
+  font-size: 5rem;
+}
+
+.about-main-button {
+  width: fit-content;
+  border-radius: 1000rem;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.about-main-button:hover {
+  opacity: 0.8;
+}
+
+.about-intro-card {
+  background: radial-gradient(100.49% 141.42% at 0% 100%, rgba(232, 175, 122, 0.50) 0%, #F0F0F0 100%);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.about-intro-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6vw;
+}
+
+.about-intro-content h4 {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.about-intro-content h4 strong {
+  font-weight: 700;
+}
+
+.about-intro-content p {
+  color: var(--grey);
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.about-contact-button {
+  background-color: var(--dark-grey);
+  color: var(--white);
+}
+
+.about-section .bottom {
+  display: grid;
+  grid-template-columns: 64fr 52fr;
+  gap: 2rem;
+}
+
+.about-section .bottom .left {
+  display: grid;
+  grid-template-columns: 38fr 26fr;
+  gap: 2rem;
+}
+
+.about-image-card {
+  height: 100%;
+}
+
+.about-image-card img {
+  width: 100%;
+  max-height: 24rem;
+  object-fit: cover;
+  border-radius: 3rem;
+}
+
+.about-split-card {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+
+.about-more-card {
+  background-color: var(--dark-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 3rem;
+}
+
+.about-more-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
+}
+
+.about-more-content h4 {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.about-more-content h4 strong {
+  font-weight: 700;
+}
+
+.about-more-content p {
+  color: #cecece;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.about-more-button {
+  background-color: var(--light-teal);
+  color: var(--dark-grey);
+}
+
+@media only screen and (max-width: 1050px) {
+  .about-section .top {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-section .top .about-data-card {
+    display: none;
+  }
+  
+  .about-section .bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .about-intro-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-intro-content p {
+    text-align: left;
+  }
+  
+  .about-section .bottom .left {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-split-card {
+    display: flex;
+  }
+  
+  .about-data-card {
+    width: 50%;
+    padding: 2rem 2rem;
+  }
+  
+  .about-data-card h4 {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .about-image-card img {
+    max-height: 20vh;
+  }
+  
+  .about-more-card {
+    align-items: flex-start;
+  }
+  
+  .about-more-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-more-content h4 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.3ch;
+  }
+  
+  .about-more-content p {
+    text-align: left;
+  }
+}

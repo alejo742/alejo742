@@ -1,0 +1,101 @@
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40fr 60fr;
+}
+
+.left {
+  background-color: var(--white);
+  padding: 3rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left h6 {
+  color: #323C46;
+  font-family: Outfit, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.left h6 a {
+  text-decoration: underline;
+  color: var(--dark-grey);
+  transition: all 0.3s;
+}
+
+.left h6 a:hover {
+  color: var(--beige);
+}
+
+.left span {
+  color: #000;
+  font-family: "Overpass Mono", monospace;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.right {
+  background-color: var(--dark-grey);
+  padding: 3rem 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.right span {
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-socials a {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.footer-socials a:hover {
+  opacity: 0.8;
+  transform: translateY(-0.5rem);
+  box-shadow: 0 3px 4px var(--light-grey);
+}
+
+@media only screen and (max-width: 1090px) {
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left {
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+  
+  .right {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .left h6, 
+  .left span, 
+  .right span {
+    text-align: center;
+  }
+}
