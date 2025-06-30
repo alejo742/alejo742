@@ -420,6 +420,7 @@ html {
   -webkit-animation: rotateLoader 2s infinite steps(64);
           animation: rotateLoader 2s infinite steps(64);
 }
+
 @-webkit-keyframes rotateLoader {
   100% {transform: rotate(2turn)}
 }

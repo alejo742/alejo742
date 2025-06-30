@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <div className={styles['main-navbar']}>
+    <div className={`${styles['main-navbar']}`}>
       <div 
         ref={navbarWrapperRef}
         className={`${styles['main-navbar-wrapper']} ${hasScrolled ? styles.shadow : ''}`}

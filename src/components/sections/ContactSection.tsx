@@ -27,13 +27,13 @@ const ContactSection: React.FC = () => {
         />
       </div>
       <div className={styles['contact-wrapper']}>
-        <div>
+        <div style={{ overflow: 'hidden' }}>
           <h3 className={`${styles['main-section-title']} scrollable text-animate`}>
             Here to <strong>help.</strong>
           </h3>
         </div>
         <form className={styles['contact-form']} action="https://api.web3forms.com/submit" method="POST">
-          {/* Important: Don't modify the access key */}
+
           <input type="hidden" name="access_key" value="389bb25c-ee20-466b-97ca-85e10b19a55e" />
 
           <div className={styles['double-input']}>
