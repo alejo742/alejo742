@@ -51,7 +51,7 @@ const WorkSection: React.FC = () => {
       <div className={styles['work-section-wrapper']}>
         <div>
           <h3 className={`${styles['main-section-title']} scrollable text-animate`}>
-            See what <strong>I do.</strong>
+            See my <strong>work.</strong>
           </h3>
         </div>
         <div className={styles['work-cards-wrapper']}>
