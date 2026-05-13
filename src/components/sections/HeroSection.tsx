@@ -21,44 +21,6 @@ const HeroSection = () => {
             <AccountCircleOutlinedIcon />
             About me 
           </a>
-          <div className={styles['hero-socials']}>
-            <a 
-              target="_blank" 
-              href="https://www.linkedin.com/in/alejandro-manrique-nunez/"
-              rel="noopener noreferrer"
-            >
-              <Image 
-                src="/socials/linkedin-dark.svg" 
-                alt="LinkedIn" 
-                width={24} 
-                height={24} 
-              />
-            </a>
-            <a 
-              target="_blank" 
-              href="https://github.com/alejo742"
-              rel="noopener noreferrer"
-            >
-              <Image 
-                src="/socials/github-dark.svg" 
-                alt="GitHub" 
-                width={24} 
-                height={24} 
-              />
-            </a>
-            <a 
-              target="_blank" 
-              href="https://www.fiverr.com/alejandroman742"
-              rel="noopener noreferrer"
-            >
-              <Image 
-                src="/socials/fiverr-dark.svg" 
-                alt="Fiverr" 
-                width={24} 
-                height={24} 
-              />
-            </a>
-          </div>
         </div>
       </div>
       <div className={styles.right}>
